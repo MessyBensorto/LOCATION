@@ -25,6 +25,7 @@ Partial Class LETTER_NI_KRASSIE
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LETTER_NI_KRASSIE))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnMysql = New System.Windows.Forms.Button()
+        Me.btnplay = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -39,18 +40,28 @@ Partial Class LETTER_NI_KRASSIE
         '
         'btnMysql
         '
-        Me.btnMysql.Location = New System.Drawing.Point(343, 291)
+        Me.btnMysql.Location = New System.Drawing.Point(436, 294)
         Me.btnMysql.Name = "btnMysql"
         Me.btnMysql.Size = New System.Drawing.Size(307, 112)
         Me.btnMysql.TabIndex = 1
         Me.btnMysql.Text = "ENTER"
         Me.btnMysql.UseVisualStyleBackColor = True
         '
+        'btnplay
+        '
+        Me.btnplay.Location = New System.Drawing.Point(68, 294)
+        Me.btnplay.Name = "btnplay"
+        Me.btnplay.Size = New System.Drawing.Size(301, 78)
+        Me.btnplay.TabIndex = 2
+        Me.btnplay.Text = "MUSIC"
+        Me.btnplay.UseVisualStyleBackColor = True
+        '
         'LETTER_NI_KRASSIE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnplay)
         Me.Controls.Add(Me.btnMysql)
         Me.Controls.Add(Me.Label1)
         Me.Name = "LETTER_NI_KRASSIE"
@@ -62,4 +73,5 @@ Partial Class LETTER_NI_KRASSIE
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btnMysql As Button
+    Friend WithEvents btnplay As Button
 End Class
